@@ -1,13 +1,12 @@
-# Tenzies Game React-App
+# Notes-App with Firebase
 
-## => Tenzies Game is an exciting project built using React.js. This game aims to bring the classic dice game of Tenzies to the digital world, providing a fun and interactive experience for players of all ages. Roll the dice to start the game.
+## => This Notes React app is a user-friendly and efficient note-taking application. Backend of this React-App is linked with Firebase, so your Notes will not be lost.
 
-## Website Link => https://tenzies-game-mk.vercel.app/
+## Website Link => https://notes-app-mk.vercel.app/
 
 ## Project's Screenshots =>
 
-![image](./src/assets/ss1.png)
-![image](./src/assets/ss2.png)
+![image](./src/assets/ss.png)
 
 <h2>Getting Started</h2>
 
@@ -16,13 +15,13 @@
 2. First, you need to open a `Terminal` in your system and `Clone` this repository by using :
 
 ```bash
-git clone https://github.com/Mk4Levi/Tenzies-Game-mk.git
+git clone https://github.com/Mk4Levi/Notes-App-with-Firebase.git
 ```
 
 3. Navigate to the Project's directory :
 
 ```bash
-cd Tenzies-Game-mk
+cd Notes-App-with-Firebase
 ```
 
 4. Install all Dependencies used in this Project :
@@ -53,8 +52,9 @@ http://localhost:5173
 ├── src
 │   ├── assets/
 │   ├── components/
-│         └──Die.jsx
-│         └──index.js
+│         └── Editor.jsx
+│         └── Sidebar.jsx
+│         └── index.js
 │
 │   ├──  css/
 │         └──style.css
