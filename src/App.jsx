@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Split from "react-split";
-import { onSnapshot, addDoc, doc, deleteDoc, setDoc } from "firebase/firestore";
 import { nanoid } from "nanoid";
+import { onSnapshot, addDoc, doc, deleteDoc, setDoc } from "firebase/firestore";
 import { notesCollection, db } from "./firebase";
 import { Sidebar, Editor } from "./components";
 
