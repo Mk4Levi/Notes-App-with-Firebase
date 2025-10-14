@@ -145,9 +145,7 @@ button:focus {
   border: none;
 }
 
-.title:hover > .delete-btn {
-  display: block;
-}
+
 
 .trash-icon {
   cursor: pointer;
@@ -194,3 +192,105 @@ button:focus {
   top: -7px;
   left: -2px;
 }
+
+/* ---------- Pin Button Fix ---------- */
+.pin-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Always visible */
+.pin-btn {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Align buttons in flex container */
+.title-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+/* ---------- Dark Mode ---------- */
+body.dark {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+}
+
+body.dark .sidebar {
+  background-color: #2b2b3a;
+}
+
+body.dark .editor {
+  background-color: #2b2b3a;
+  color: #f5f5f5;
+}
+
+body.dark .text-snippet {
+  color: #f5f5f5;
+}
+
+body.dark .selected-note {
+  background-color: #4a4e74;
+}
+
+body.dark .new-note,
+body.dark .first-note {
+  background-color: #4a4e74;
+  color: white;
+}
+
+.title-buttons .delete-btn {
+  display: inline-block; /* always show */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.title-buttons .pin-btn {
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* dark mode new code */
+.editor-dark .mde-textarea {
+  background-color: #2b2b3a;
+  color: #f5f5f5;
+}
+
+.editor-dark .mde-preview {
+  background-color: #2b2b3a;
+  color: #f5f5f5;
+}
+
+
+
+body.dark {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+}
+
+body.dark .sidebar {
+  background-color: #2b2b3a;
+}
+
+body.dark .editor {
+  background-color: #1c1c28;
+  color: #f5f5f5;
+}
+
+.editor-dark .mde-textarea {
+  background-color: #2b2b3a;
+  color: #f5f5f5;
+}
+
+.editor-dark .mde-preview {
+  background-color: #2b2b3a;
+  color: #f5f5f5;
+}
+
