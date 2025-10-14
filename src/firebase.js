@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCz1vI32TWBxaeQ2d_bgvCKPycKHDlYtKo",
   authDomain: "notes-app-6296.firebaseapp.com",
@@ -13,5 +14,12 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Firestore DB
 export const db = getFirestore(app);
+
+// Firebase Auth → Issue-1: No authentication previously
+export const auth = getAuth(app);
+
+// Notes collection
 export const notesCollection = collection(db, "notes");
